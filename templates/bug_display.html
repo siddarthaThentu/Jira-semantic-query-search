@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <title>Here Is Your URL!</title>
+</head>
+<body>
+<h1>Here are your top 10 similar bugs</h1>
+<ul>
+    {% for bug,bug_link in shortcode %}
+        <li>
+            <a target="_blank" href={{bug_link}}>{{bug}}</a>
+        </li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
